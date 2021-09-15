@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nova Square', cursive;
+    
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+.container{
+    background-color: cadetblue;
+    width: 450px;
+    height: 450px;
+    padding: 100px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.notification{
+    width: 350px;
+    height: 330px;
+    background-color: #fff;
+    
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 5;
+    transition: all ease-in-out 0.5s;
+}
+
+.notification.shownoti{
+    left: 230px;
+    transition: all ease-in-out 0.5s;
+}
+
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: chocolate;
+    position: absolute;
+    text-align: center;
+}
+
+.btn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.notifi{
+    margin-top: 10px;
+}
+
+.search{
+    position: absolute;
+    
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    background-color: chocolate;
+}
+
+.searchinput{
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    top: 10px;
+    right: 50px;
+    padding: 15px 5px;
+    transform: translateX(20%);
+    border-radius: 30px;
+    border: none;
+    
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    /* z-index: 2; */
+}
+
+.searchinput.showsearch{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+}
+
+.searchinput:focus{
+    outline: 0;
+}
+
+.line{
+    width: 2px;
+    height: 330px;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+
+    margin: 0 50px;
+
+}
+
+.noti{
+    background-color: #fff;
+    width: 82%;
+    position: absolute;
+    top: 50px;
+    left: 63px;
+    text-align: left;
+    font-size: 18px;
+    
+    /* line-height: 10px; */
+}
+
+.noti:hover{
+    color: chocolate;
+}
+
+.first{
+    top: 60px;
+}
+
+.second{
+    top: 160px;
+}
+
+.third{
+    top: 260px;
+}
+
+p{
+    margin: 5px 0;
+}
+
+
+
+.circle{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid chocolate;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.first .circle{
+    top: 5px;
+    left: -18px;
+}
+
+.second .circle{
+    top: 5px;
+    left: -18px;
+}
+
+.third .circle{
+    top: 5px;
+    left: -18px;
+}
+
+.menu{
+    width: 180px;
+    height: 300px;
+    background-color: chocolate;
+  
+   
+    align-items: center;
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    top: 155px;
+    left: 540px;
+    overflow: hidden;
+    transition: all ease-in 0.5s;
+    /* z-index: 2; */
+}
+
+.menu.showmenu{
+    left: 520px;
+    transition: all ease-in 0.5s;
+}
+
+.menu ul{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+ .menu ul li{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    padding: 30px 20px;
+    background-color: red;
+    top: 0px;
+    left: -9px;
+    margin: 15px 10px;
+    text-align: center;
+    line-height: 50px;
+    /* border-bottom: 1px solid gray; */
+    list-style-type: none;
+    
+}
+
+.menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu ul li:nth-of-type(1){
+    margin-top: 0px ;
+}
+.menu ul li:nth-of-type(2){
+    margin-top: 60px ;
+}
+
+.menu ul li:nth-of-type(3){
+    margin-top: 120px ;
+}
+
+.menu ul li:nth-of-type(4){
+    margin-top: 180px ;
+}
+
+.menu ul li:nth-of-type(5){
+    margin-top: 240px ;
+}  
+

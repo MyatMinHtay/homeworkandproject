@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+
+    --leftbg-color:linear-gradient(45deg,rgba(161,83,127,0.1),rgba(168,46,127,0.1));
+    --rightbg-color:linear-gradient(45deg,rgba(229,243,127,0.1),rgba(240,193,127,0.1));
+
+    --hover-width:75%;
+    --other-width:25%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto' , sans-serif !important;
+
+    height: 100vh;
+    width: 100vw;
+    
+    /* overflow: hidden; */
+    margin: 0;
+
+
+    
+}
+
+/*========== nav ========== */
+
+.navbar{
+    opacity: 0.8;
+}
+nav a span{
+    font-size: 25px;
+    color: white;
+    text-shadow: 0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5,
+ 				 0px 3px 0px #4287f5;
+
+}
+
+.item{
+    color: white !important;
+    font-size: 20px;
+    text-shadow: 0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5,
+ 				 0px 3px 0px #4287f5;
+}
+
+#nav button{
+    background: aqua;
+    width: 5rem;
+    border-radius: 15px;
+}
+/*======== end nav ==========  */
+
+/*========== Start About Section ========== */
+.btnripple{
+    background-color: royalblue;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid royalblue;
+    padding: 20px 30px;
+    margin: auto;
+
+    overflow: hidden;
+    top: 50%;
+    right: 20%;
+    position: absolute;
+
+    /* transform: translate(-50%,-50%); */
+}
+
+@media (max-width:600px){
+    .btnripple{
+        top: 50%;
+        right: 30%;
+    }
+
+    .showone{
+        width: 100%;
+    }
+}
+
+.btnripple:focus{
+    outline: 0;
+}
+
+.btnripple .circle{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%) scale(0);
+
+    animation-name: myani;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes myani {
+    to{
+        transform: translate(-50%,-50%) scale(3);
+        opacity: 0;
+    }
+}
+
+
+.fa-heart{
+    color: red;
+}
+
+.loveme{
+    /* width: 600px;
+    height: 440px; */
+    background-image: url('../img/1.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.3);    margin: auto;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+
+     
+    /* transform: translate(-50%,-50%);  */
+    overflow: hidden;
+}
+
+.loveme .fa-heart{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%) scale(0);
+
+    animation-name: myanione;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+
+@keyframes myanione{
+    to{
+        transform: translate(-50%,-50%) scale(10);
+        opacity: 0;
+    }
+}
+
+.showabout{
+    transform: translateX(200%);
+    /* display: block; */
+    transition: all 0.5s ease-in-out;
+}
+
+.showabout.visible{
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+   
+}
+
+.showone{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition-delay: 0.4s;
+  
+   
+}
+
+.showtwo{
+    width: 95%;
+    height: 100%;
+    background-color: #fff;
+    padding: 40px;
+
+    top: 0;
+    right: 0;
+
+    position: absolute;
+    transition-delay: 0.2s;
+  
+    
+    
+}
+
+.showtwo.visible{
+    transition-delay: 0.2s;
+}
+
+.showthree{
+    width: 95%;
+    height: 100%;
+    background-color: gray;
+    padding: 40px;
+
+    top: 0;
+    right: 0;
+    position: absolute;
+   
+   
+
+    transition-delay: 0s;
+}
+
+.showthree.visible{
+    transition-delay: 0.4s;
+}
+
+.aboutbtn{
+    position: absolute;
+    top: 50px;
+}
+
+.abcolor{
+    text-shadow: 0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5;
+}
+
+
+
+
+
+/*==========End About Section ========== */
+
+/* -------- start split landing page -------  */
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.split.left{
+    left: 0;
+    background-image: url('../img/555.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.split.left::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--leftbg-color);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+.split.right{
+    right: 0;
+    background-image: url('../img/666.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.split.right::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:var(--rightbg-color);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.hover-left .left{
+    width: var(--hover-width);
+}
+
+.hover-left .right{
+    width: var(--other-width);
+}
+
+.hover-right .right{
+    width: var(--hover-width);
+}
+
+.hover-right .left{
+    width: var(--other-width);
+}
+
+.split.left,.split.right,.split.left::before,.split.right::before{
+    transition: all 1s ease-in-out;
+}
+
+.container .split p{
+    
+font-size: 2rem;
+color: #fff;
+
+text-shadow:    0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5,
+ 				 0px 3px 0px #4287f5;
+
+white-space: nowrap;
+
+position: absolute;
+
+top: 80%;
+left: 50%;
+
+transform: translateX(-50%);
+}
+
+@media(max-width:800px){
+    .container .split p{
+        font-size: 0.7rem;
+        top: 80%;
+        text-shadow: 0px 1px 0px #4287f5;
+    }
+    
+    #nav button{
+        width: 90%;
+    }
+}
+
+/*--------- End Split Landing Page ----------- */
+
+
+
+/*========== Start Pricing Section ========== */
+
+#pricing .price{
+    text-shadow: 0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5;
+ 				
+}
+
+.months,.years,.currencyone,.currencytwo{
+    text-shadow: 0px 1px 0px #4287f5
+ 				 0px 2px 0px #4287f5;
+}
+
+.card{
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+    text-shadow: 0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5;
+ 				
+}
+
+
+
+.card a{
+    width: 90%;
+    margin: auto;
+}
+
+.card-header h3{
+    text-shadow: 0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5,
+ 				 0px 3px 0px #4287f5;
+}
+
+#toasts{
+    
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+
+}
+
+.toastoo{
+    
+    /* position: absolute; */
+    border-radius: 5px ;
+    background-color: aqua;
+    padding: 1rem 2rem ;
+    margin: 0.5rem ;
+   
+
+}
+
+.toastoo.info{
+    color: rebeccapurple;
+}
+
+.toastoo.success{
+    color: green;
+}
+
+.toastoo.danger{
+    color: red;
+}
+
+
+
+
+/*========== End Pricing Section ========== */
+
+
+/*========== Start Help Section  ==========*/
+
+
+.progressbar{
+    display: block;
+    width: 10%;
+    height: 3px;
+}
+.zero{
+    width: 30%;
+    background-color: aqua;
+    transition: all 1s ease;
+}
+
+.one{
+    width: 25%;
+    background-color: aqua;
+    transition: all 1s ease;
+}
+
+.two{
+    width: 26%;
+    background-color: aqua;
+    transition: all 1s ease;
+}
+
+.three{
+    width: 24%;
+    background-color: aqua;
+    transition: all 1s ease;
+}
+
+.four{
+    width: 5%;
+    background-color: aqua;
+    transition: all 1s ease;
+}
+
+.five{
+    width: 15%;
+    background-color: aqua;
+    transition: all 1s ease;
+}
+
+
+
+.web:hover + .one,.how:hover + .zero,
+.http:hover + .three,.em:hover + .four,
+.wp:hover + .five,.acc:hover + .two{
+    width: 100%;
+}
+
+.help{
+    text-shadow: 0px 1px 0px #4287f5,
+ 				 0px 2px 0px #4287f5;
+}
+
+.darkunderlines{
+    width: 150px;
+    border: 3px solid white;
+    margin: auto;
+}
+@media (max-width:600px){
+
+    .zero{
+        width: 70%;
+    }
+    .one{
+        width: 55%;
+    }
+    .two{
+        width: 58%;
+    }
+    .three{
+        width: 40%;
+    }
+    .four{
+        width: 15%;
+    }
+    .five{
+        width: 30%;
+    }
+}
+
+/*========== End Help Section ========== */
+
+
+/*========== Start Contact Section ========== */
+.formcontainer{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.formcontainer h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group{
+    width: 350px;
+    margin: 20px 0 40px;
+
+    position: relative;
+}
+
+.form-group input{
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #fff solid;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.form-group input:focus{
+    outline: 0;
+    border-bottom-color: #4287f5;
+}
+
+.formcontainer .btn{
+    width: 90%;
+    background-color: #4287f5;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formcontainer.btn:focus{
+    outline: 0;
+}
+
+.formcontainer .btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: #4287f5;
+}
+
+.form-group label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.form-group label span {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.form-group input:focus + label span,
+.form-group input:valid + label span{
+    color: #4287f5;
+    transform: translateY(-30px);
+}
+
+
+/*========== End Contact Section ========== */

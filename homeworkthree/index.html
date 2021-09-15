@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDF 4077 Home Work</title>
+    <link href="img/M21.png" rel="icon" type="image/png" />
+    <link href="fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    <nav>
+        <button id="close" class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="logo">
+            <img src="img/M21.png" alt="profile">
+        </div>
+
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Portfolio</a></li>
+            <li><a href="#"><i class="fas fa-id-card"></i> About</a></li>
+            <li><a href="#"><i class="far fa-address-card"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Setting</a></li>
+            <li><a href="#"><i class="far fa-sign-out-alt"></i> Log out</a></li>
+        </ul>
+
+        <div class="icon-box">
+        <a href="#" class="icon"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="icon"><i class="fas fa-envelope-square"></i></a>
+    </div>
+    </nav>
+    <header>
+    <button id="toggle" class="toggle">
+        <i class="fas fa-bars fa-2x"></i>
+    </button>
+
+    <h3>JerryM2 Mp3 Channel</h3>
+
+    <button id="open" class="btn">Sign up</button>
+    </header>
+
+    <div class="container">
+
+        <button id="closeone" class="closeform-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <form id="form" class="form" action="" method="">
+
+            
+
+            <h2>Register with us</h2>
+            
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="" placeholder="Enter username" autocomplete="off" />
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="" placeholder="Enter email" autocomplete="off"/>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="" placeholder="Enter password" />
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="cfmpassword">Comfirm Password</label>
+                <input type="password" name="cfmpassword" id="cfmpassword" class="" placeholder="Enter comfirm password" />
+                <small>Error message</small>
+            </div>
+
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Music Box  -->
+
+    <div id="musicbox" class="music-box">
+
+          <!-- image container  -->
+          <div class="img-container">
+            <img src="img/sample1.png" id="cover" alt="musiccover">
+        </div>
+
+       
+
+
+
+        <!-- Music info  -->
+        <div class="music-info">
+            <h4 id="title">Sample Music</h4>
+            <div id="progress-container" class="progress-container">
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+               <span class="smallbox"></span>
+            </div>
+
+        <audio src="songs/all i ever need.mp3" id="audio"></audio>
+
+         <!-- controls box -->
+         <div class="controls">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+
+
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+
+        
+      
+
+        
+    </div>
+
+
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
