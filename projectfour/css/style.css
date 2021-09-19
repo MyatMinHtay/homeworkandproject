@@ -1,0 +1,175 @@
+
+body{
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+    background-image:linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ), url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+/* Satrt Navbar  */
+.navbar{
+    background: transparent;
+    padding: 20px 30px;
+
+    transition: all 0.7s;
+}
+
+.navmenus{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+    padding: 5px 30px;
+}
+
+.brand{
+    color: honeydew;
+}
+
+.brand:hover{
+    color: green;
+}
+.menuitems{
+    
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition: color 0.5s;
+}
+
+.menuitems:hover{
+    color: green !important;
+}
+
+.lines1,.lines2,.lines3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    /* transform-origin: center; */
+    transition: all 0.3s ease-in-out;
+   
+    
+}
+
+.lines1{
+   animation: animatethree 1s linear forwards;
+}
+
+.lines2{
+    animation: animatesix 1s linear forwards;
+}
+
+.lines3{
+   animation: animatefour 1s linear forwards;
+}
+
+
+.changes .lines1{
+    /* transform: rotate(-45deg) ; */
+      
+    animation:animateone 1s linear forwards;
+
+}
+
+.changes .lines2{
+    /* opacity: 0; */
+    animation: animatefive 1s linear forwards;
+}
+
+.changes .lines3{
+    /* transform: rotate(45deg) ; */
+    
+    animation: animatetwo 1s linear forwards;
+}
+
+@keyframes animateone{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+    100%{
+       
+        transform: translateY(8px)  rotate(145deg);
+    }
+}
+
+@keyframes animatetwo{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(-8px)  rotate(-145deg);
+    }
+}
+
+@keyframes animatethree{
+    0%{
+       
+        transform: translateY(8px) rotate(145deg);
+       
+    }
+    50%{
+       
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animatefour{
+    0%{
+        transform: translateY(-8px)  rotate(-145deg);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes animatefive{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes animatesix{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5s;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* End Navbar  */
+
+/* Start Banner Section  */
+
+.paragh:last-of-type{
+    text-align: justify;
+}
+
+/* End Banner Section  */
