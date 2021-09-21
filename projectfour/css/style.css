@@ -5,13 +5,10 @@ body{
 
 header{
     height: 100vh;
-    background-image:linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    ), url("../img/bg.jpg");
+    background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 
     position: relative;
 }
@@ -24,6 +21,8 @@ header{
     transition: all 0.7s;
 }
 
+
+
 .navmenus{
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
     padding: 5px 30px;
@@ -31,6 +30,7 @@ header{
 
 .brand{
     color: honeydew;
+   
 }
 
 .brand:hover{
@@ -38,7 +38,7 @@ header{
 }
 .menuitems{
     
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 1px;
 
     transition: color 0.5s;
