@@ -195,7 +195,7 @@ header{
 }
 
 .darkunderlines{
-    align-items: center;
+    
     width: 150px;
     border: 3px solid white;
 }
@@ -211,17 +211,117 @@ header{
     margin: 0 30px;
     font-size: 25px;
     text-shadow: 0px 1px 0px #4af9f2,
-    0px 2px 0px #4af9f2,
-    0px 3px 0px #4af9f2;
+                 0px 2px 0px #4af9f2,
+                 0px 3px 0px #4af9f2;
 }
 
 .gallerylists{
     color: #777;
     cursor: pointer;
+    transition:  all 0.5s ease;
 }
 
 .gallerylists.activeitems{
     color: #06b7bd;
 }
 
+.knowledge,.cartoon,.moti,.short{
+    animation: myani 2s linear forwards;
+    transition: all 1s ease-in;
+}
+
+.catagorys.showcata{
+    animation: myani 1s linear forwards;
+    transition: all 1s ease-in;
+}
+
+@media(max-width:600px){
+    .about.showcata{
+        animation-delay: 1s;
+    }
+}
+
+
+@keyframes myani{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* End Catagory Section  */
+
+/* Start About Section  */
+.about.showcata{
+    animation: myani 1s linear forwards;
+    transition: all 1s ease-in;
+}
+
+
+
+#text{
+    text-align: justify;
+    color: white;
+
+}
+
+@media(max-width:600px){
+    #text{
+        font-size: 20px;
+        
+    }
+
+}
+
+/* End About Section  */
+
+/* Start Pricing Section  */
+.card{
+    width: 85%;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.6);
+    background: #C8FF15;
+    margin-left: 40px;
+
+}
+.pricing{
+    background: brown;
+}
+
+.card-title,.card-header{
+    color: black;
+    background: #C8FF15;
+}
+
+.card-body ul li{
+    color: black;
+    background: #C8FF15;
+}
+
+.cardbtn{
+    width: 90%;
+    color: cyan;
+    background: #E000FF;
+    margin: auto;
+
+}
+
+.pricing.showcata{
+    animation: myani 1s linear forwards;
+    transition: all 1s ease-in;
+}
+/* End Pricing Section */
+
+/* Start Contact Section  */
+
+.footerlinks{
+    text-decoration: none;
+}
+
+.contact.showcata{
+    animation: myani 1s linear forwards;
+    transition: all 1s ease-in;
+}
+/* End Contact Section  */

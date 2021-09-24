@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Nav</title>
+    <title>JM2 Entainerment</title>
 
     <!-- bootstrap css1 js2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" >
 
     <!-- custom css1  -->
     <link  href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- icon image  -->
+    <link  href="img/M21.png" rel="icon" type="image/png" />
 </head>
 <body>
 
     <!-- Start Header Section  -->
 
     <!-- start nav bar  -->
-    <header>
+    <header id="home">
         <!-- start nav bar  -->
     
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -39,16 +42,16 @@
     
                     <ul class="navbar-nav">
                         <li class="nav-item ms-auto"><a href="#home" class="nav-link text-uppercase fw-bold text-light menuitems">Home</a> </li>
-                        <li class="nav-item ms-auto dropdown"><a href="#softward" class="nav-link dropdown-toggle text-uppercase fw-bold text-light menuitems" data-bs-toggle="dropdown" >Catagory</a>
+                        <li class="nav-item ms-auto dropdown"><a href="#catagory" class="nav-link dropdown-toggle text-uppercase fw-bold text-light menuitems" data-bs-toggle="dropdown" >Catagory</a>
                             <ul class="dropdown-menu ms-auto ulbgs">
-                                <li><a href="#software" class="dropdown-item text-light">Knowledge Video</a></li>
-                                <li><a href="#software" class="dropdown-item text-light">Cartoon Video</a></li>
-                                <li><a href="#software" class="dropdown-item text-light">Motivation Video</a></li>
-                                <li><a href="#software" class="dropdown-item text-light">Shortstory Video</a></li>
+                                <li><a href="knowledge.html" class="dropdown-item text-light">Knowledge Video</a></li>
+                                <li><a href="cartoon.html" class="dropdown-item text-light">Cartoon Video</a></li>
+                                <li><a href="moti.html" class="dropdown-item text-light">Motivation Video</a></li>
+                                <li><a href="shortstory.html" class="dropdown-item text-light">Shortstory Video</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item ms-auto"> <a href="#home"  class="nav-link text-uppercase  fw-bold text-light menuitems">About</a> </li>
-                        <li class="nav-item ms-auto"><a href="#help"  class="nav-link text-uppercase fw-bold text-light menuitems">Pricing</a> </li>
+                        <li class="nav-item ms-auto"> <a href="#aboutus"  class="nav-link text-uppercase  fw-bold text-light menuitems">About</a> </li>
+                        <li class="nav-item ms-auto"><a href="#price"  class="nav-link text-uppercase fw-bold text-light menuitems">Pricing</a> </li>
                         <li class="nav-item ms-auto"><a href="#contact"  class="nav-link text-uppercase fw-bold text-light menuitems">Contact </a> </li>
                     </ul>
             </div>
@@ -63,7 +66,7 @@
 
     <!-- Start Catagory Section  -->
 
-        <section class="bg-dark">
+        <section class="bg-dark catagorys" id="catagory">
 
             <div class="container-fluid">
                 <div class="row">
@@ -83,7 +86,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 movie my-3 knowledge"> 
                         <!-- <img src="img/photo1.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
                         
-                            <iframe src="https://drive.google.com/file/d/1mKTC6u6uufUZs0b_ThNQZdAiLp090ajc/preview" width="380" height="300"  allow="autoplay" ></iframe>
+                        <iframe src="https://drive.google.com/file/d/1UoQmtK65I0G-jB16sLbMoZP00_pl4x3r/preview" width="380" height="300" allow="autoplay"></iframe>
                  
                         
                         <div class="textdivs">
@@ -95,7 +98,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 movie  my-3 cartoon "> 
                         <!-- <img src="img/photo2.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
 
-                        <iframe src="https://drive.google.com/file/d/1Xvbvcgjp-IbfVZO0CVtgsj-aAuLSunSf/preview" width="380" height="300"   allow="autoplay"></iframe>
+                        <iframe src="https://drive.google.com/file/d/1rPOjzuCEw9iln4fuk-6inNohJ8U6lwfm/preview" width="380" height="300" allow="autoplay"></iframe>
 
                         <div class="textdivs">
                             <h2 class="movie-title text-white text-center">The White Snake</h2>
@@ -105,7 +108,7 @@
 
                     <div class="col-lg-4 col-md-6 col-sm-12 movie my-3 moti"> 
                         <!-- <img src="img/photo3.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
-                        <iframe width="380" height="300" frameborder="0" src="https://mega.nz/embed/SJ0wwBiD#4KTv0HAd1A0dePNdvrYCc0vXT0Bs05wB9BORIpSa7vc"   allowfullscreen ></iframe>
+                        <iframe src="https://drive.google.com/file/d/1J8JZhjBr_TxDRhvG1VWxO6MBj8uCrZsp/preview" width="380" height="300" allow="autoplay"></iframe>
 
                         <div class="textdivs">
                             <h2 class="movie-title text-white text-center">The White Snake</h2>
@@ -116,7 +119,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 movie my-3 short"> 
                         <!-- <img src="img/photo1.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
                         
-                            <iframe src="https://drive.google.com/file/d/1mKTC6u6uufUZs0b_ThNQZdAiLp090ajc/preview" width="380" height="300"  allow="autoplay" ></iframe>
+                        <iframe src="https://drive.google.com/file/d/1i6Hwx7qL6SVjwfiHYIQt7ldJW19z0arb/preview" width="380" height="300" allow="autoplay"></iframe>
                  
                         
                         <div class="textdivs">
@@ -128,7 +131,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 movie  my-3 knowledge"> 
                         <!-- <img src="img/photo2.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
 
-                        <iframe src="https://drive.google.com/file/d/1Xvbvcgjp-IbfVZO0CVtgsj-aAuLSunSf/preview" width="380" height="300"   allow="autoplay"></iframe>
+                        <iframe src="https://drive.google.com/file/d/1UoQmtK65I0G-jB16sLbMoZP00_pl4x3r/preview" width="380" height="300" allow="autoplay"></iframe>
 
                         <div class="textdivs">
                             <h2 class="movie-title text-white text-center">The White Snake</h2>
@@ -138,7 +141,7 @@
 
                     <div class="col-lg-4 col-md-6 col-sm-12 movie my-3 cartoon"> 
                         <!-- <img src="img/photo3.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
-                        <iframe width="380" height="300" frameborder="0" src="https://mega.nz/embed/SJ0wwBiD#4KTv0HAd1A0dePNdvrYCc0vXT0Bs05wB9BORIpSa7vc"   allowfullscreen ></iframe>
+                        <iframe src="https://drive.google.com/file/d/1rPOjzuCEw9iln4fuk-6inNohJ8U6lwfm/preview" width="380" height="300" allow="autoplay"></iframe>
 
                         <div class="textdivs">
                             <h2 class="movie-title text-white text-center">The White Snake</h2>
@@ -149,7 +152,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 movie my-3 moti"> 
                         <!-- <img src="img/photo1.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
                         
-                            <iframe src="https://drive.google.com/file/d/1mKTC6u6uufUZs0b_ThNQZdAiLp090ajc/preview" width="380" height="300"  allow="autoplay" ></iframe>
+                        <iframe src="https://drive.google.com/file/d/1J8JZhjBr_TxDRhvG1VWxO6MBj8uCrZsp/preview" width="380" height="300" allow="autoplay"></iframe>
                  
                         
                         <div class="textdivs">
@@ -161,7 +164,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 movie  my-3  short"> 
                         <!-- <img src="img/photo2.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
 
-                        <iframe src="https://drive.google.com/file/d/1Xvbvcgjp-IbfVZO0CVtgsj-aAuLSunSf/preview" width="380" height="300"   allow="autoplay"></iframe>
+                        <iframe src="https://drive.google.com/file/d/1i6Hwx7qL6SVjwfiHYIQt7ldJW19z0arb/preview" width="380" height="300" allow="autoplay"></iframe>
 
                         <div class="textdivs">
                             <h2 class="movie-title text-white text-center">The White Snake</h2>
@@ -171,7 +174,7 @@
 
                     <div class="col-lg-4 col-md-6 col-sm-12 movie my-3 knowledge"> 
                         <!-- <img src="img/photo3.jpg" width="400px" height="300px" class="moviedivs" alt="photo1"> -->
-                        <iframe width="380" height="300" frameborder="0" src="https://mega.nz/embed/SJ0wwBiD#4KTv0HAd1A0dePNdvrYCc0vXT0Bs05wB9BORIpSa7vc"   allowfullscreen ></iframe>
+                        <iframe src="https://drive.google.com/file/d/1UoQmtK65I0G-jB16sLbMoZP00_pl4x3r/preview" width="380" height="300" allow="autoplay"></iframe>
 
                         <div class="textdivs">
                             <h2 class="movie-title text-white text-center">The White Snake</h2>
@@ -179,11 +182,289 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 text-center mt-3">
+                    <strong class="text-white">If You Want to see more video you can choose and click Catagory in nav bar</strong>
+                </div>
             </div>
 
         </section>
 
     <!-- End Catagory Section  -->
+
+    <!-- Start About Section  -->
+        <section  class="bg-secondary about py-2" id="aboutus">
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <h1 class="text-center text-light">About</h1>
+                    <div class="mb-2 darkunderlines mx-auto"></div>
+
+                    <div class="col-12 autotextdivs">
+
+                        <h4 id="text">Starting...</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+   
+
+    <!-- End About Section  -->
+
+    <!-- Start Pricing Section  -->
+
+        <section class="pricing" id="price">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+
+                        <h1 class="fw-bold text-uppercase text-white price">Pricing</h1>
+                        <div class="mb-4 darkunderlines mx-auto bg-dark"></div>
+                        
+                        <div class="form-check form-switch d-flex justify-content-center">
+                            <label for="toggle" id="changetime"  class="text-light ">Monthly</label>
+                            <input type="checkbox" name="agree" id="toggle" class="form-check-input mx-3 bg-secondary"/>
+                            <label for="toggle"  class="text-light years">Yearly</label>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- card -->
+                    <div class="col-md-4 col-sm-10 my-4 mx-auto " id="normal">
+                        <div class="card ">
+                            <!-- card header -->
+                            <div class="card-header text-uppercase text-center py-4">
+                                <h3 class="fw-bold" style="font-size: 30px;">Normal</h3>
+    
+                            </div>
+                            <!-- End of card header -->
+    
+                            <!-- card title -->
+                            <div class="card-title text-center my-3">
+                                <h4> <span class="normal">3 $ per month</span></h4>
+                            </div>
+                            <!-- End of card Title -->
+    
+                            <div class="card-body">
+                            <!-- list -->
+                            <ul class="list-group bg-dark text-center months">
+                                <li class="list-group-item ">
+                                   Early Access For New Update
+                                </li>
+    
+                                <li class="list-group-item ">
+                                    Good Quility Video Support
+                                </li>
+    
+                                <li class="list-group-item ">
+                                    One Divice Can Use
+                                </li>
+
+                                <li class="list-group-item ">
+                                    Can't Request Video You Want
+                                </li>
+    
+                              
+                            </ul>
+                        </div>
+                            <!-- End of list -->
+    
+    
+                            
+                            
+                            <a href="#" class="btn cardbtn my-2 justify-content-center text-capitalize">Get Plan</a>
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <!-- End of card -->
+    
+                    <!-- card -->
+                    <div class="col-md-4 col-sm-10 my-4 mx-auto" id="premium">
+                        <div class="card   ">
+                            <!-- card header -->
+                            <div class="card-header   text-uppercase text-center py-4">
+                                <h3 class="fw-bold" style="font-size: 30px;">Premium</h3>
+    
+                            </div>
+                            <!-- End of card header -->
+    
+                            <!-- card title -->
+                            <div class="card-title  text-center my-2">
+                                <h4> <span class="premium">6 $ per month</span></h4>
+                            </div>
+                            <!-- End of card Title -->
+    
+                            <!-- list -->
+                            <div class="card-body">
+                                <ul class="list-group   text-center py-2">
+                                    <li class="list-group-item ">
+                                        Early Access For New Update
+                                    </li>
+        
+                                    <li class="list-group-item ">
+                                        Good Quility Video Support
+                                    </li>
+        
+                                    <li class="list-group-item ">
+                                        3 Divices Can Use
+                                    </li>
+
+                                    <li class="list-group-item ">
+                                        Can Request Video You Want
+                                    </li>
+    
+                                  
+                                </ul>
+    
+                               
+                            </div>
+                            
+                            <!-- End of list -->
+    
+                                <a href="#" class="btn cardbtn  justify-content-center my-2 text-capitalize">Get Plan</a>
+                            
+                               
+                            
+                           
+                        </div>
+                    </div>
+    
+                    <!-- End of card -->
+    
+                    <!-- card -->
+                    <div class="col-md-4 col-sm-10 my-4 mx-auto">
+                        <div class="card " id="diamond">
+                            <!-- card header -->
+                            <div class="card-header   text-uppercase text-center py-4">
+                                <h3 class="fw-bold" style="font-size: 30px;">Diamond</h3>
+    
+                            </div>
+                            <!-- End of card header -->
+    
+                            <!-- card title -->
+                            <div class="card-title text-center   my-3">
+                                <h4> <span class="diamond">10 $ per month</span> </h4>
+                            </div>
+                            <!-- End of card Title -->
+    
+                            <!-- list -->
+                            <div class="card-body text-white">
+                            <ul class="list-group  text-center">
+                                <li class="list-group-item  ">
+                                    Early Access For New Update
+                                </li>
+    
+                                <li class="list-group-item ">
+                                    Good Quility Video Support
+                                </li>
+    
+                                <li class="list-group-item  ">
+                                    5 Divices Can Use
+                                </li>
+
+                                <li class="list-group-item ">
+                                    Can Request Video You Want
+                                </li>
+    
+                               
+                            </ul>
+                        </div>
+                            <!-- End of list -->
+    
+                          
+                           
+                         <a href="#" class="btn cardbtn justify-content-center my-2  text-capitalize">Get Plan</a>
+                         
+                          
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <small class="mx-auto text-white">you can choose free here ! <a href="#">free plan</a></small>
+                    </div>
+    
+                    <!-- End of card -->
+                </div>
+            </div>
+        </section>
+
+    <!-- End Pricing Section  -->
+
+    <!-- Start Footer Section  -->
+
+        <footer class="bg-dark px-5 contact" id="contact">
+
+            <div class="container-fluid">
+                <h1 class="text-center text-white">Contact</h1>
+                <div class=" darkunderlines mx-auto"></div>
+
+                <div class="row text-light py-4">
+
+                   
+
+                    <div class="col-lg-3 col-sm-6">
+
+                        <h5 class="pb-3">Policy</h5>
+
+                        <p class="small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+
+                        <h5>Visit Us</h5>
+
+                        <ul class="list-unstyled">
+                           <li><a href="#" class="footerlinks">Home</a></li>
+                           <li><a href="#" class="footerlinks">Catagory</a></li>
+                           <li><a href="#" class="footerlinks">About</a></li>
+                           <li><a href="#" class="footerlinks">Pricing</a></li>
+                           <li><a href="#" class="footerlinks">Contact</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <h5>Need Help?</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footerlinks">Facebook</a></li>
+                            <li><a href="#" class="footerlinks">Gmail</a></li>
+                            <li><a href="#" class="footerlinks">Phone</a></li>
+                            <li><a href="#" class="footerlinks">Viber</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <h5>Subscribe Us</h5>
+                        <p class="small">Subscribe Here Now</p>
+
+                        <form action="" method="">
+                            <div class="input-group">
+                                <input type="text" name="signup" id="signup" class="form-control px-5 " placeholder="Email Address" />
+
+                               
+                            </div>
+                            <button type="submit" class="btn btn-danger text-uppercase fw-bold mt-3 input-group-text">Subscribe Now</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    <!-- End Footer Section  -->
 
     
 
